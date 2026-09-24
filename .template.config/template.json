@@ -23,7 +23,7 @@
     {
       "modifiers": [
         {
-          "exclude": ["**/bin/**", "**/obj/**", "**/Logs/**", "**/.vs/**", "**/.git/**", "README.uk.md"]
+          "exclude": ["**/bin/**", "**/obj/**", "**/Logs/**", "**/.vs/**", "**/.git/**", "README.uk.md", "README.md"]
         }
       ]
     }
