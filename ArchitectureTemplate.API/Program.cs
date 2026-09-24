@@ -17,7 +17,14 @@ builder.Services.AddBusinessLayer();
 builder.Services.AddDataLayer(builder.Configuration.GetConnectionString("DefaultConnection"));
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options => 
+{ 
+    var xmlFile = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+
+    options.IncludeXmlComments(xmlPath, 
+        includeControllerXmlComments: true);
+});
 
 var app = builder.Build();
 
