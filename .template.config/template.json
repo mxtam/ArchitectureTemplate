@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Local project template",
+  "classifications": ["API", "Layered"],
+  "identity": "ArchitectureTemplate.ArchitectureOnly.CSharp",
+  "name": "Layered API architecture without business functionality",
+  "shortName": "architecture-template",
+  "sourceName": "ArchitectureTemplate",
+  "preferNameDirectory": true,
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "guids": [
+    "A7BAE342-4597-408C-A038-F5FC98615954",
+    "D21929BF-80B9-441B-B1AF-B6978958D996",
+    "F3711ABF-9395-45B4-9B59-4360F8A98B13",
+    "3E2049A3-0ACB-4182-802C-0553413ED04F",
+    "9071E3BF-4F71-4D9E-8172-F264D90905FC",
+    "B58A8FC3-E2E6-4795-A188-5DC135EAD1D8"
+  ],
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": ["**/bin/**", "**/obj/**", "**/Logs/**", "**/.vs/**", "**/.git/**", "README.uk.md"]
+        }
+      ]
+    }
+  ]
+}
